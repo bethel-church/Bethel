@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_trip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+
+    tools:context="com.bethel.ui.ChooseTripActivity">
+
+    <TextView
+        android:id="@+id/top_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="Settings"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+
+        fontPath="fonts/OpenSans-ExtraBold.ttf"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Budget Amount"
+        android:textColor="#3F585D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/activity_leader_budget"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+        android:gravity="center_vertical"
+        android:hint="type here"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:background="#CFD3D3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundshape"
+
+        fontPath="fonts/OpenSans-ExtraBold.ttf"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:text="SAVE BUDGET"
+        android:textColor="#2F5157"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/activity_leader_saveBudget" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_height="30dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTextGreen" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Currencies Used"
+        android:textColor="#565656"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!--android:background="#F5F5F5"-->
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linearlayout"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"></LinearLayout>
+          <!--  <TextView
+                android:id="@+id/add_currency_list"
+                fontPath="fonts/OpenSans-ExtraBold.ttf"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/dottedshape"
+                android:gravity="center"
+                android:hint="+ Add Another"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />-->
+
+                <LinearLayout
+                    android:orientation="horizontal" android:layout_width="match_parent"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:background="@drawable/dottedshape"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:id="@+id/currencybgrl"
+                        android:layout_height="wrap_content">
+                      <!--  <TextView
+                            android:id="@+id/add_currency_list"
+                            fontPath="fonts/OpenSans-ExtraBold.ttf"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            ce
+                            android:hint="+ Add Another"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingPrefix" />-->
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#FFFFFF"
+                            android:hint="+ Add Another"
+                            android:textSize="15sp"
+                            fontPath="fonts/OpenSans-ExtraBold.ttf"
+                            android:id="@+id/add_currency_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp" />
+
+
+                    </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/activity_leader_setting_selected_currency_delete"
+                        android:src="@android:drawable/ic_delete"
+                        android:layout_width="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+        </LinearLayout>
+     </ScrollView>   <ListView
+            android:visibility="gone"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/activity_leader_currencyList"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="match_parent"></ListView>
+
+    </FrameLayout>
+</LinearLayout>

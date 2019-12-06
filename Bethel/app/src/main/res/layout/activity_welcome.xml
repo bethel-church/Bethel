@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bethel.ui.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imgGallery"
+        android:layout_width="match_parent"
+        android:src="@drawable/a"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/dialog_round"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Welcome to the Bethel Trips receipt app."
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            fontPath="fonts/OpenSans-ExtraBold.ttf"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Who will you be travelling with?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mission_trip"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/grey_rounded"
+            android:gravity="center"
+            android:text="Mission Trips"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/choose_second_travel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/grey_rounded"
+            android:gravity="center"
+            android:text="2nd Year Travel"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Bethel</string>
+    <string name="hey_welcome"><![CDATA[Hey, welcome to the</br><b> Bethel mission reciept app!</b></br></br><b> Select your name</b> from this list so we know who you are when you upload a reciept]]></string>
+    <string name="hey_user"><![CDATA[Hey, <b>****</>! \n<b>Some quick questions</b>\nAbout your trip to make the app work better for you]]></string>
+
+    <string name="something_went">Something went wrong!</string>
+    <string name="error_rec_data">Error receiving data</string>
+    <string name="network_failed">Please connect and try again.</string>
+    <string name="timed_out">Connection timed out.Please try again.</string>
+    <string name="internal_error">Server error occurred. Please try again later.</string>
+    <string name="alert">Oops!</string>
+    <string name="internet_not_available">Internet not available.</string>
+<string name="text">
+        </string>
+<string name="receipttolonglabel"> Receipt too long? You can add sections to this receipt after pressing
+    "Take Picture"
+        </string>
+    <string name="nodata">There are not any \"Saved for Later\" receipts yet.\n\nReceipts get stored here when an attempt to upload a receipt is made, but the Internet connection is too poor.</string>
+    <string name="to_access_this_receipt_later_press_on_the">To access this receipt later press on the "View Receipts" button and then press on the "Saved for Later" toggle.</string>
+
+</resources>

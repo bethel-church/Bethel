@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="capturing_image" />
+    <FrameLayout
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:id="@+id/overlaylayoutview"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/overlayimage"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/crossicon"
+            android:layout_height="80dp" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="2dp"
+            android:background="@android:color/transparent"
+            android:layout_gravity="bottom"
+
+            >
+            <TextView
+                android:id="@+id/imagenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff"
+
+                android:text="2"
+                />
+            <View
+                android:background="@drawable/dotted"
+                android:layout_width="match_parent"
+                android:layout_height="3dp" /></LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/camera_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/camera_image_view"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:id="@+id/overlaylayout"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#B5A7A1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/overlaytext"
+                android:text="@string/receipttolonglabel"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="#44000000"
+
+                android:textSize="17sp"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/capture_image_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="capture_image" />
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="done" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/submitll"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorTextGreen"
+        android:layout_height="60dp">
+        <Button
+            android:id="@+id/takeimagetv"
+            android:text="Take picture"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:background="@drawable/submitreciept"
+            android:layout_width="120dp"
+            android:textColor="@color/colorTextGreen"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/canceltv"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:id="@+id/helptv"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

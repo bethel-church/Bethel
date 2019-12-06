@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="0dp"
+    android:paddingLeft="8dp"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:paddingLeft="5dp"
+        android:paddingTop="8dp"
+        android:text="Dina nath chauhan"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/separtor"
+        android:layout_alignParentLeft="true"
+
+        android:textStyle="bold"
+        fontPath="fonts/OpenSans-ExtraBold.ttf"
+        />
+    <TextView
+        android:id="@+id/receiptdate"
+        android:layout_below="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="left|center"
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/separtor"
+        android:layout_alignParentLeft="true"
+        android:gravity="left|center"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:text="Who will you be travelling with?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/receipttype"
+        android:layout_below="@+id/receiptdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/separtor"
+        android:layout_alignParentLeft="true"
+        android:text="Logding"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/desctv"
+        android:layout_below="@+id/receipttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+
+        android:paddingLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/separtor"
+        android:layout_alignParentLeft="true"
+
+        android:text="desc"
+
+        android:textColor="#B5B5B5"
+        android:textSize="14sp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/separtor"
+
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pricetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:text="$111"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:layout_toLeftOf="@+id/separtor"
+                fontPath="fonts/OpenSans-ExtraBold.ttf"
+                />
+            <TextView
+                android:id="@+id/currencyname"
+                android:layout_below="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/separtor"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:text="USD"
+                android:textAllCaps="true"
+                android:textColor="#B5B5B5"
+                android:textSize="14sp" />
+
+           <FrameLayout
+               android:layout_width="wrap_content"
+
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/roundshape"
+
+                   fontPath="fonts/OpenSans-ExtraBold.ttf"
+                   android:gravity="center"
+                   android:text="UPLOAD"
+                   android:textColor="#2F5157"
+                   android:textSize="16sp"
+                   android:textStyle="bold"
+                   android:paddingLeft="8dp"
+                   android:paddingRight="8dp"
+                   android:paddingTop="2dp"
+                   android:paddingBottom="2dp"
+                   android:visibility="gone"
+                   android:id="@+id/uploadbtn" />
+               <ProgressBar
+                   style="?android:attr/progressBarStyleHorizontal"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/progress"
+                   android:layout_gravity="center"
+                   android:visibility="gone"
+                   android:layout_centerHorizontal="true"
+                   android:layout_centerVertical="true"
+                   android:max="100"
+                   android:progress="0"/>
+           </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:background="#AFAFAF"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:background="#4498A1"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:background="#EA2645"
+            android:layout_width="4dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

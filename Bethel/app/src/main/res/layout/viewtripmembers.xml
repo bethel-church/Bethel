@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_trip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.bethel.ui.ChooseTripActivity">
+
+    <TextView
+        android:id="@+id/top_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Trip Members"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/usersearchet"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#f1f1f1"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:gravity="left|center_vertical"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:maxLines="1"
+
+            android:singleLine = "true"
+            android:imeOptions="actionSearch"
+            android:paddingRight="20dp"
+            android:hint="Search"
+            android:textColor="#cbcbcb"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="Cancel"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            tools:ignore="MissingPrefix" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/recyclerTrips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp" />
+
+
+
+
+
+</LinearLayout>

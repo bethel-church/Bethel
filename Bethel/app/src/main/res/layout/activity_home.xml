@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context="com.bethel.ui.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+
+        android:orientation="horizontal">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+        <TextView
+            android:id="@+id/settings_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableTop="@drawable/ic_settings_black_24dp"
+            android:text="SETTINGS"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableTop="@drawable/ic_exit_to_app_black_24dp"
+            android:text="LOG OUT"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_container"
+        android:layout_below="@+id/top_container"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_container"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Trip Leader"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+
+            fontPath="fonts/OpenSans-ExtraBold.ttf"/>
+
+        <TextView
+            android:id="@+id/trip_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/designation"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Costa Rica 2016"
+            android:textSize="18sp"
+
+            fontPath="fonts/OpenSans-ExtraBold.ttf"/>
+
+        <FrameLayout
+            android:id="@+id/camera_container"
+            android:layout_width="match_parent"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trip_name"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/grey_rounded"
+            android:orientation="horizontal"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                fontPath="fonts/OpenSans-ExtraBold.ttf"
+                android:drawableTop="@drawable/ic_camera_alt_black_24dp"
+                android:text="+ ADD A RECEIPT"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:id="@+id/viewreceiptsfl"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/camera_container"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/grey_rounded"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="VIEW RECEIPTS"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+
+                fontPath="fonts/OpenSans-ExtraBold.ttf"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_home_trip_members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/camera_container"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/grey_rounded"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="VIEW TRIP MEMBERS"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+
+                fontPath="fonts/OpenSans-ExtraBold.ttf"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom_container"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/total_budget"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="2020"
+                fontPath="fonts/OpenSans-ExtraBold.ttf"
+                android:gravity="center"
+                android:textColor="#37474F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/total_spend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14140000"
+                fontPath="fonts/OpenSans-ExtraBold.ttf"
+                android:textColor="#37474F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/total_remaining"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2424"
+                fontPath="fonts/OpenSans-ExtraBold.ttf"
+                android:textColor="#37474F"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Check Amount"
+                android:id="@+id/checkamouttv"
+                android:gravity="center"
+                android:textColor="#37474F"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/totalspenttv"
+                android:text="Total Spent"
+                android:textColor="#37474F"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/remainingtv"
+                android:gravity="center"
+                android:text="Remaining"
+                android:textColor="#37474F"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

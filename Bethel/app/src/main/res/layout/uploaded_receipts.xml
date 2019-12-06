@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/headerview"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/top_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Receipts"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/filterlabel"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Filter"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tempiv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<FrameLayout
+    android:layout_width="match_parent"
+android:id="@+id/uploadframefl"
+    android:layout_below="@+id/headerview"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/uploadallbtn"
+        android:layout_width="wrap_content"
+        android:textColor="#818181"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/headerview"
+        android:text="UPLOAD ALL RECEIPTS"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+      android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/progressall"
+        android:progressDrawable="@drawable/customprogress"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:max="100"
+        android:progress="0"/></FrameLayout>
+    <View
+        android:background="#AFAFAF"
+        android:layout_below="@+id/uploadframefl"
+        android:layout_width="match_parent"
+        android:id="@+id/viewdiv"
+        android:layout_height="1dp"/>
+    <com.bethel.swipelist.SwipeMenuListView
+        android:id="@+id/listView"
+        android:padding="0dp"
+        android:layout_below="@+id/viewdiv"
+        android:dividerHeight="0dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/nodatatv"
+        android:layout_centerInParent="true"
+        android:textColor="#818181"
+        android:visibility="gone"
+        android:text="@string/nodata"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/totalspenttv"
+        android:padding="10dp"
+
+        android:background="@drawable/grey_rounded"
+        android:layout_width="130dp"
+        android:textColor="#ffffff"
+        android:text="vjv"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        fontPath="fonts/OpenSans-ExtraBold.ttf"
+        android:layout_height="60dp" />
+    <TextView
+        android:text="nn"
+        android:id="@+id/totalfiltertv"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/totalspenttv"
+        android:background="@drawable/grey_bg"
+        android:layout_width="130dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+
+        android:visibility="gone"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        fontPath="fonts/OpenSans-ExtraBold.ttf"
+        android:layout_height="60dp" />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_trip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.bethel.ui.ChooseTripActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:background="@color/colorAccent"
+    >
+    <TextView
+        android:id="@+id/back_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
+        android:text="Back"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:text="Currencies"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/save_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:text="Save"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerCurrencies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp" />
+
+
+</LinearLayout>

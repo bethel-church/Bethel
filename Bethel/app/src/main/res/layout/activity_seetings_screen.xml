@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_trip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.bethel.ui.ChooseTripActivity">
+
+    <TextView
+        android:id="@+id/top_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="What is your trip budget, in USD?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Don't worry, this number doesn't have to be exact, it will only be used for your benefit to give an estimate as to how much money your team has left to spend."
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+        android:gravity="center_vertical"
+        android:hint="type here"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@color/colorTextGreen" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/colorTextGreen" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Beside USD, will this trip \nuse any other currencies?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/display_currencies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="visible"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/select_currency"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Select Currencies"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@color/colorTextGreen" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtContinue"
+            fontPath="fonts/OpenSans-ExtraBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="DONE"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            tools:ignore="MissingPrefix" />
+    </FrameLayout>
+</LinearLayout>
