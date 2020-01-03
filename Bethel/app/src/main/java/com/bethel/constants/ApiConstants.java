@@ -9,7 +9,6 @@ import java.util.ArrayList;
  */
 
 public interface ApiConstants {
-    String BASE_URL = "http://betheltripreceipts.com/services/";
     String SUCCESS = "success";
     //end points
     String GET_TIPS_LIST = "/get_trip_list";

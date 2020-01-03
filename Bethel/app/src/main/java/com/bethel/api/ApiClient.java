@@ -26,14 +26,9 @@ import retrofit.http.POST;
  * Retrofit api client
  */
 public class ApiClient {
-
     private static final String ENDPOINT = "http://betheltripreceipts.com/services";
-    private static final String YAHOOENDPOINT = "http://finance.yahoo.com/webservice/v1/symbols/allcurrencies";
 
     private static ApiInterface apiInterface;
-    private static ApiInterface apiYahooInterface;
-    //http://grocery-qa.zapbuild.com/api/1.0";//"http://202.164.44.244/grocery/trunk/api/1.0";
-    private static long mElapsedTime;
 
     public static ApiInterface getApiClient() {
         if (apiInterface == null) {

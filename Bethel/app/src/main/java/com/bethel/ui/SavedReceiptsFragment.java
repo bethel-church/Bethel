@@ -155,7 +155,7 @@ public class SavedReceiptsFragment extends Fragment implements MultiPartRequest.
         values.put("price_other_currency", selectedPrice);
 
         String url;
-        url="http://betheltripreceipts.com/services/add_receipt";
+        url = ApiClient.ENDPOINT + "/add_receipt";
         hitMultipartRequest(getActivity(), url, this, values);
     }
 

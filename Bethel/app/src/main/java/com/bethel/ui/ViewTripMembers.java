@@ -176,7 +176,7 @@ fetchReceipts();
 
     private void fetchReceipts() {
         showProgress();
-        String url ="http://betheltripreceipts.com/services/get_user_details";
+        String url = ApiClient.ENDPOINT + "/get_user_details";
         JSONObject jsonRequest = new JSONObject();
         try {
             jsonRequest.put("trip_id", SharedPreferencesHandler.getStringValues(this,ApiConstants.TRIP_ID));

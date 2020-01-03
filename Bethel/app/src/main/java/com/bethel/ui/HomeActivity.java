@@ -697,7 +697,7 @@ public class HomeActivity extends BaseActivity {
 
     private void getArchiveStatus() {
 
-        String url ="http://betheltripreceipts.com/services/isArchived";
+        String url =ApiClient.ENDPOINT + "/isArchived";
         JSONObject jsonRequest = new JSONObject();
         try {
             jsonRequest.put("trip_id",SharedPreferencesHandler.getStringValues(this, ApiConstants.TRIP_ID));

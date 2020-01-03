@@ -801,13 +801,13 @@ boolean isImageLoaded;
         String url;
         if(isEdit) {
             if (isUploaded) {
-                url = "http://betheltripreceipts.com/services/update_receipt";
+                url = ApiClient.ENDPOINT + "/update_receipt";
                 values.put("receipt_id", receiptModel.getTransaction().getId());
             } else {
-                url = "http://betheltripreceipts.com/services/add_receipt";
+                url = ApiClient.ENDPOINT + "/add_receipt";
             }
         }else{
-            url = "http://betheltripreceipts.com/services/add_receipt";
+            url = ApiClient.ENDPOINT + "/add_receipt";
 
         }
 

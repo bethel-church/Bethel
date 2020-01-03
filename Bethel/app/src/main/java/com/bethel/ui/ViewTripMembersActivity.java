@@ -73,7 +73,7 @@ public class ViewTripMembersActivity extends BaseActivity implements SelectUserA
 
     private void fetchReceipts() {
         showProgress();
-        String url ="http://betheltripreceipts.com/services/get_all_receipts";
+        String url = ApiClient.ENDPOINT + "/get_all_receipts";
         JSONObject jsonRequest = new JSONObject();
         try {
             jsonRequest.put("trip_id", SharedPreferencesHandler.getStringValues(this,ApiConstants.TRIP_ID));

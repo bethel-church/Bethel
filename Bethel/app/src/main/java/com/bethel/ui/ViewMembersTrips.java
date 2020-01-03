@@ -30,6 +30,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.bethel.R;
+import com.bethel.api.ApiClient;
 import com.bethel.api.NetworkSingleton;
 import com.bethel.constants.ApiConstants;
 import com.bethel.database.AppDatabase;
@@ -130,7 +131,7 @@ public class ViewMembersTrips extends Activity implements UpdateReceiptFilter {
 double total;
     public void fetchReceipts() {
         showProgress();
-        String url ="http://betheltripreceipts.com/services/get_all_receipts";
+        String url = ApiClient.ENDPOINT + "/get_all_receipts";
         JSONObject jsonRequest = new JSONObject();
         try {
             jsonRequest.put("trip_id", SharedPreferencesHandler.getStringValues(this, ApiConstants.TRIP_ID));
@@ -1243,7 +1244,7 @@ double filterTotal=0.0;
 
     private void deleteReceipt(String id, final int position, final ReceiptDetails receiptDetails) {
         showProgress();
-        String url ="http://betheltripreceipts.com/services/delete_receipt";
+        String url = ApiClient.ENDPOINT + "/delete_receipt";
         JSONObject jsonRequest = new JSONObject();
         try {
             jsonRequest.put("receipt_id",id);
